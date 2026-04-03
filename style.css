@@ -167,12 +167,13 @@ p {
 }
 
 .news-date {
-    width: 120px;
+    width: 180px;
     flex-shrink: 0;
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-color);
     padding-right: 15px;
+    white-space: nowrap;
 }
 
 .news-content {
@@ -188,6 +189,33 @@ p {
 
 .pub-title {
     font-size: 1rem;
+}
+
+/* Badges */
+.pub-tag {
+    display: inline-block;
+    padding: 0.15rem 0.45rem;
+    font-size: 0.7rem;
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
+}
+.pub-tag.kci {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+    border: 1px solid #d8b4fe;
+}
+.pub-tag.scie {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #7dd3fc;
+}
+.pub-tag.scopus {
+    background-color: #ffedd5;
+    color: #c2410c;
+    border: 1px solid #fdba74;
 }
 
 /* Footer */
