@@ -105,9 +105,8 @@ header {
 
 /* Right Profile Section */
 .profile {
-    float: right;
+    order: 2;
     width: 250px;
-    margin-left: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -127,6 +126,7 @@ header {
 
 /* Left Content Area */
 .content {
+    order: 1;
     flex: 1;
     min-width: 0; /* needed to prevent flex blowout */
 }
@@ -231,9 +231,10 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .profile {
+        order: -1;
         float: none;
         width: 100%;
         max-width: 300px;
