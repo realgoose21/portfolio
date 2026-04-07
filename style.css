@@ -98,15 +98,18 @@ header {
     max-width: 930px;
     margin: 100px auto 60px;
     padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Right Profile Section */
 .profile {
-    order: 2;
+    float: right;
     width: 250px;
+    margin-left: 40px;
     margin-bottom: 2rem;
 }
 
@@ -126,9 +129,7 @@ header {
 
 /* Left Content Area */
 .content {
-    order: 1;
-    flex: 1;
-    min-width: 0; /* needed to prevent flex blowout */
+    /* No flex needed, content will naturally flow around the floated profile */
 }
 
 h1.page-title {
@@ -230,11 +231,7 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
     .profile {
-        order: -1;
         float: none;
         width: 100%;
         max-width: 300px;
