@@ -1,13 +1,14 @@
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --text-muted: #828282;
-    --theme-color: #b509ac; /* vibrant pink/purple */
-    --theme-hover: #b509ac;
-    --border-color: rgba(0, 0, 0, 0.1);
-    --footer-bg: #1c1c1d;
-    --footer-text: #e8e8e8;
-    
+    /* 파란 계열 팔레트로 교체: 신뢰감 있는 남색/파란 톤 */
+    --bg-color: #f6fbff;          /* 옅은 아이스 블루 배경 */
+    --text-color: #0b1b2b;         /* 매우 어두운 남색 계열 텍스트 */
+    --text-muted: #5b6b88;          /* 중간 남색 계열 텍스트 */
+    --theme-color: #1e88e5;         /* 메인 파란 계열(링크/주색) */
+    --theme-hover: #1976d2;         /* 호버 시 더 어두운 파란색 */
+    --border-color: rgba(12, 28, 60, 0.15); /* 다크 남색 계열 비주얼 경계 */
+    --footer-bg: #0f2a4a;            /* 네이비 톤의 풋터 배경 */
+    --footer-text: #e8f0ff;           /* 풋터 텍스트 밝은 색상 */
+
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
